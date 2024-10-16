@@ -1,7 +1,7 @@
 /* custom properties */
 :root {
     --footer-height: 100px;
-    --sidebar-width: 250px;
+    /* --sidebar-width: 250px; */
     --cols-number: 6;
 }
 
@@ -30,13 +30,13 @@
 
 .action-bar {
     height: var(--footer-height);
+
     /* debug */
-    background-color: bisque;
+    background-color: #282828;
 }
 
-
 .sidebar {
-    width: var(--sidebar-width);
+    height: calc(100% - var(--footer-height));
     padding: 15px;
     /* debug */
     min-height: 200px;
@@ -44,14 +44,10 @@
 
 .content {
     width: calc(100% - var(--sidebar-width));
-    /* debug */
-    min-height: 200px;
+    height: 100%;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    right: 0;
     width: calc(100% - var(--sidebar-width));
     display: flex;
     justify-content: right;
@@ -69,8 +65,8 @@
 }
 
 .main-content {
-    height: 100%;
-    padding: 70px  20px 30px;
+    height: calc(100% - var(--footer-height));
+    padding: 5px  20px 30px;
     background-color: #141922;
     overflow: auto;
 }
@@ -99,10 +95,6 @@ h2 {
     display: flex;
     align-items: center;
     font-size: 15px;
-    margin-top: 15px;
-}
-
-ul {
     margin-top: 15px;
 }
 
@@ -136,7 +128,6 @@ h5 {
 }
 
 .download {
-    padding-top: 150px;
     margin-right: -10px;
 }
 

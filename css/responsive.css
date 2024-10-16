@@ -1,0 +1,19 @@
+@media screen and (max-width: 1024px) {
+    :root {
+        --cols-number: 4;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    :root {
+        --cols-number: 2;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    :root {
+        --sidebar-width: 80px;
+    }
+}

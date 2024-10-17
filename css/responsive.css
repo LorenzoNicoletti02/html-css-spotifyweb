@@ -30,4 +30,29 @@
     :root {
         --sidebar-width: 80px;
     }
+
+    .sidebar {
+        width: 60px;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .logo-spotify {
+        display: none;
+    }
+
+    .logo-spotify-small {
+        display: block;
+    }
+    
+    .scritte-resp {
+        display: none;
+    }
+
+    .sidebar-svg {
+        display: block;
+        width: 200px;
+    }
 }
